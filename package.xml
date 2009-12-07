@@ -20,10 +20,10 @@
   <active>yes</active>
  </lead>
  <date>2009-12-07</date>
- <time>10:25:05</time>
+ <time>12:56:27</time>
  <version>
-  <release>0.0.9</release>
-  <api>0.0.9</api>
+  <release>0.0.10</release>
+  <api>0.0.10</api>
  </version>
  <stability>
   <release>alpha</release>
@@ -31,7 +31,7 @@
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-initial release
+Moved form Validate to filter_var, fixed PHP version dependency
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -54,7 +54,7 @@ initial release
  <dependencies>
   <required>
    <php>
-    <min>5.1.2</min>
+    <min>5.2.0</min>
    </php>
    <pearinstaller>
     <min>1.4.0b1</min>
@@ -71,10 +71,6 @@ initial release
    </package>
    <package>
     <name>HTTP_OAuth</name>
-    <channel>pear.php.net</channel>
-   </package>
-   <package>
-    <name>Validate</name>
     <channel>pear.php.net</channel>
    </package>
    <extension>
@@ -117,7 +113,22 @@ initial release
    <date>2009-12-07</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
    <notes>
-initial release
+Moved form Validate to filter_var, fixed PHP version dependency
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.0.10</release>
+    <api>0.0.10</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-12-07</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+Moved form Validate to filter_var, fixed PHP version dependency
    </notes>
   </release>
  </changelog>

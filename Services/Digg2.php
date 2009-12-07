@@ -15,7 +15,6 @@
 /**
  * Required files 
  */
-require_once 'Validate.php';
 require_once 'HTTP/Request2.php';
 require_once 'Services/Digg2/Exception.php';
 require_once 'HTTP/OAuth.php';
@@ -152,7 +151,7 @@ class Services_Digg2
      */
     public function setURI($uri)
     {
-        if (!Validate::uri($uri)) {
+        if (!filter_var($uri, FILTER_VALIDATE_URL, FILTER_FLAG_SCHEME_REQUIRED)) {
             throw new Services_Digg2_Exception('Invalid URI: ' . $uri);
         }
         $this->uri = $uri;
