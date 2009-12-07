@@ -23,8 +23,8 @@ $packagexml->setSummary('Second generation Digg API client)');
 $packagexml->setDescription('A PHP client for Digg\'s second generation API.  Works with versions 1.0 and above');
 
 $packagexml->setChannel('pear.php.net');
-$packagexml->setAPIVersion('0.0.8');
-$packagexml->setReleaseVersion('0.0.8');
+$packagexml->setAPIVersion('0.0.9');
+$packagexml->setReleaseVersion('0.0.9');
 
 $packagexml->setReleaseStability('alpha');
 

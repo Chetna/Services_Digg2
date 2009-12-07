@@ -19,11 +19,11 @@
   <email>jeffhodsdon@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2009-11-17</date>
- <time>11:30:01</time>
+ <date>2009-12-07</date>
+ <time>10:25:05</time>
  <version>
-  <release>0.0.8</release>
-  <api>0.0.8</api>
+  <release>0.0.9</release>
+  <api>0.0.9</api>
  </version>
  <stability>
   <release>alpha</release>
@@ -43,6 +43,9 @@ initial release
    </dir> <!-- /Services -->
    <dir name="tests">
     <dir name="Services">
+     <dir name="Digg2">
+      <file name="AllTests.php" role="test" />
+     </dir> <!-- /tests/Services/Digg2 -->
      <file name="Digg2Test.php" role="test" />
     </dir> <!-- /tests/Services -->
    </dir> <!-- /tests -->
@@ -97,6 +100,21 @@ initial release
     <api>alpha</api>
    </stability>
    <date>2009-11-17</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+initial release
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.0.9</release>
+    <api>0.0.9</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2009-12-07</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
    <notes>
 initial release
