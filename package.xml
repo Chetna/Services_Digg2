@@ -5,8 +5,8 @@
     http://pear.php.net/dtd/package-2.0.xsd">
  <name>Services_Digg2</name>
  <channel>pear.php.net</channel>
- <summary>Second generation Digg API client)</summary>
- <description>A PHP client for Digg&apos;s second generation API.  Works with versions 1.0 and above</description>
+ <summary>Second generation Digg API client</summary>
+ <description>A PHP client for Digg&apos;s second generation API.  Works with versions 1.0 and above.  See http://digg.com/api for detailed documentation.</description>
  <lead>
   <name>Bill Shupp</name>
   <user>shupp</user>
@@ -26,7 +26,7 @@
   <active>yes</active>
  </lead>
  <date>2010-01-26</date>
- <time>14:49:11</time>
+ <time>15:10:10</time>
  <version>
   <release>0.1.0</release>
   <api>0.1.0</api>
@@ -55,6 +55,7 @@ Initial PEAR release
      <file name="Digg2Test.php" role="test" />
     </dir> <!-- /tests/Services -->
    </dir> <!-- /tests -->
+   <file name="Services_Digg2-0.1.0.tgz" role="data" />
   </dir> <!-- / -->
  </contents>
  <dependencies>

@@ -19,8 +19,8 @@ $packagexml->setOptions(array(
 ));
 
 $packagexml->setPackage('Services_Digg2');
-$packagexml->setSummary('Second generation Digg API client)');
-$packagexml->setDescription('A PHP client for Digg\'s second generation API.  Works with versions 1.0 and above');
+$packagexml->setSummary('Second generation Digg API client');
+$packagexml->setDescription('A PHP client for Digg\'s second generation API.  Works with versions 1.0 and above.  See http://digg.com/api for detailed documentation.');
 
 $packagexml->setChannel('pear.php.net');
 $packagexml->setAPIVersion('0.1.0');
