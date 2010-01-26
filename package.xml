@@ -19,11 +19,17 @@
   <email>jeffhodsdon@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2009-12-07</date>
- <time>12:56:27</time>
+ <lead>
+  <name>Rich Schumacher</name>
+  <user>richid</user>
+  <email>rich.schu@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-01-26</date>
+ <time>14:49:11</time>
  <version>
-  <release>0.0.10</release>
-  <api>0.0.10</api>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
  </version>
  <stability>
   <release>alpha</release>
@@ -31,7 +37,7 @@
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-Moved form Validate to filter_var, fixed PHP version dependency
+Initial PEAR release
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -129,6 +135,21 @@ Moved form Validate to filter_var, fixed PHP version dependency
    <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
    <notes>
 Moved form Validate to filter_var, fixed PHP version dependency
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-01-26</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+Initial PEAR release
    </notes>
   </release>
  </changelog>

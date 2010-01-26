@@ -8,7 +8,7 @@
  * @category  Services
  * @package   Services_Digg2
  * @author    Bill Shupp <hostmaster@shupp.org> 
- * @copyright 2009 Bill Shupp
+ * @copyright 2010 Bill Shupp
  * @license   http://www.opensource.org/licenses/bsd-license.php FreeBSD
  * @link      http://github.com/digg/services_digg2
  */
@@ -25,7 +25,7 @@ require_once 'PEAR/Exception.php';
  * @category  Services
  * @package   Services_Digg2
  * @author    Bill Shupp <hostmaster@shupp.org> 
- * @copyright 2009 Bill Shupp
+ * @copyright 2010 Bill Shupp
  * @license   http://www.opensource.org/licenses/bsd-license.php FreeBSD
  * @link      http://github.com/digg/services_digg2
  */

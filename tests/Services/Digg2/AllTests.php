@@ -7,7 +7,7 @@
  * @category  Services
  * @package   Services_Digg2
  * @author    Bill Shupp <hostmaster@shupp.org> 
- * @copyright 2009 Digg, Inc.
+ * @copyright 2010 Digg, Inc.
  * @license   http://www.opensource.org/licenses/bsd-license.php FreeBSD
  * @link      http://github.com/digg/Services_Digg2
  */
@@ -21,7 +21,7 @@ require_once 'Services/Digg2Test.php';
  * @category  Services
  * @package   Services_Digg2
  * @author    Bill Shupp <hostmaster@shupp.org> 
- * @copyright 2009 Digg, Inc.
+ * @copyright 2010 Digg, Inc.
  * @license   http://www.opensource.org/licenses/bsd-license.php FreeBSD
  * @link      http://github.com/digg/Services_Digg2
  */

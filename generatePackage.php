@@ -11,7 +11,7 @@ $packagexml->setOptions(array(
     'simpleoutput'      => true,
     'packagedirectory'  => './',
     'filelistgenerator' => 'file',
-    'ignore'            => array('generatePackage.php'),
+    'ignore'            => array('generatePackage.php', 'runTests.php'),
     'dir_roles' => array(
         'tests'     => 'test',
         'examples'  => 'doc'
@@ -23,14 +23,14 @@ $packagexml->setSummary('Second generation Digg API client)');
 $packagexml->setDescription('A PHP client for Digg\'s second generation API.  Works with versions 1.0 and above');
 
 $packagexml->setChannel('pear.php.net');
-$packagexml->setAPIVersion('0.0.10');
-$packagexml->setReleaseVersion('0.0.10');
+$packagexml->setAPIVersion('0.1.0');
+$packagexml->setReleaseVersion('0.1.0');
 
 $packagexml->setReleaseStability('alpha');
 
 $packagexml->setAPIStability('alpha');
 
-$packagexml->setNotes('Moved form Validate to filter_var, fixed PHP version dependency');
+$packagexml->setNotes('Initial PEAR release');
 $packagexml->setPackageType('php');
 $packagexml->addRelease();
 
@@ -44,6 +44,10 @@ $packagexml->addMaintainer('lead',
                            'jeffhodsdon',
                            'Jeff Hodsdon',
                            'jeffhodsdon@gmail.com');
+$packagexml->addMaintainer('lead',
+                           'richid',
+                           'Rich Schumacher',
+                           'rich.schu@gmail.com');
 
 $packagexml->setLicense('New BSD License',
                         'http://www.opensource.org/licenses/bsd-license.php');
