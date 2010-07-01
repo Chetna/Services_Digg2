@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
     http://pear.php.net/dtd/tasks-1.0.xsd
     http://pear.php.net/dtd/package-2.0
     http://pear.php.net/dtd/package-2.0.xsd">
@@ -25,11 +25,11 @@
   <email>rich.schu@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-01-26</date>
- <time>15:10:10</time>
+ <date>2010-07-01</date>
+ <time>10:43:04</time>
  <version>
-  <release>0.1.0</release>
-  <api>0.1.0</api>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
  </version>
  <stability>
   <release>alpha</release>
@@ -37,7 +37,8 @@
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-Initial PEAR release
+* Fixed #17545, added comment.post to the list of writable methods
+* Added version dependency of 0.1.17 for HTTP_OAuth, which has its own bug fixes
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -55,7 +56,6 @@ Initial PEAR release
      <file name="Digg2Test.php" role="test" />
     </dir> <!-- /tests/Services -->
    </dir> <!-- /tests -->
-   <file name="Services_Digg2-0.1.0.tgz" role="data" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -79,6 +79,7 @@ Initial PEAR release
    <package>
     <name>HTTP_OAuth</name>
     <channel>pear.php.net</channel>
+    <min>0.1.17</min>
    </package>
    <extension>
     <name>json</name>
@@ -151,6 +152,22 @@ Moved form Validate to filter_var, fixed PHP version dependency
    <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
    <notes>
 Initial PEAR release
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-07-01</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+* Fixed #17545, added comment.post to the list of writable methods
+* Added version dependency of 0.1.17 for HTTP_OAuth, which has its own bug fixes
    </notes>
   </release>
  </changelog>

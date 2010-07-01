@@ -23,14 +23,15 @@ $packagexml->setSummary('Second generation Digg API client');
 $packagexml->setDescription('A PHP client for Digg\'s second generation API.  Works with versions 1.0 and above.  See http://digg.com/api for detailed documentation.');
 
 $packagexml->setChannel('pear.php.net');
-$packagexml->setAPIVersion('0.1.0');
-$packagexml->setReleaseVersion('0.1.0');
+$packagexml->setAPIVersion('0.2.0');
+$packagexml->setReleaseVersion('0.2.0');
 
 $packagexml->setReleaseStability('alpha');
 
 $packagexml->setAPIStability('alpha');
 
-$packagexml->setNotes('Initial PEAR release');
+$packagexml->setNotes('* Fixed #17545, added comment.post to the list of writable methods
+* Added version dependency of 0.1.17 for HTTP_OAuth, which has its own bug fixes');
 $packagexml->setPackageType('php');
 $packagexml->addRelease();
 
@@ -57,7 +58,7 @@ $packagexml->setPearinstallerDep('1.4.0b1');
 $packagexml->addExtensionDep('required', 'json');
 $packagexml->addPackageDepWithChannel('required', 'PEAR', 'pear.php.net', '1.4.0');
 $packagexml->addPackageDepWithChannel('required', 'HTTP_Request2', 'pear.php.net', '0.4.1');
-$packagexml->addPackageDepWithChannel('required', 'HTTP_OAuth', 'pear.php.net');
+$packagexml->addPackageDepWithChannel('required', 'HTTP_OAuth', 'pear.php.net', '0.1.17');
 $packagexml->addPackageDepWithChannel('optional', 'Log', 'pear.php.net');
 
 $packagexml->generateContents();

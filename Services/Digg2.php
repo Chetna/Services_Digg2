@@ -128,6 +128,7 @@ class Services_Digg2
         'story.bury',
         'comment.digg',
         'comment.bury',
+        'comment.post',
         'oauth.verify'
     );
 
