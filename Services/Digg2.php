@@ -77,21 +77,21 @@ class Services_Digg2
      * @see setURI()
      * @var string
      */
-    protected $uri = 'http://services.digg.com';
+    protected $uri = 'http://services.new.digg.com';
 
     /**
      * Version to use in API calls
      * 
      * @var mixed
      */
-    protected $version = '1.0';
+    protected $version = '2.0';
 
     /**
      * Supported version numbers
      * 
      * @var $versions
      */
-    protected $versions = array('1.0');
+    protected $versions = array('1.0', '2.0');
 
     /**
      * Current group requested.  i.e., $digg->story->getAll(), the group is "story".
@@ -126,9 +126,15 @@ class Services_Digg2
     protected $writeMethods = array(
         'story.digg',
         'story.bury',
+        'story.hide',
         'comment.digg',
         'comment.bury',
         'comment.post',
+        'user.follow',
+        'user.unfollow',
+        'getSavedStories',
+        'saveStory',
+        'removeStory',
         'oauth.verify'
     );
 
@@ -293,8 +299,7 @@ class Services_Digg2
         if (count($args)) {
             $args = $args[0];
         }
-        $args['method'] = $this->getCurrentGroup() . '.' . $name;
-        return $this->sendRequest($args);
+        return $this->sendRequest($name, $args);
     }
 
     /**
@@ -306,7 +311,7 @@ class Services_Digg2
      * @throws Services_Digg2_Exception on error
      * @return stdObject response
      */
-    protected function sendRequest(array $args)
+    protected function sendRequest($method, array $args)
     {
         $httpMethod = in_array($args['method'], $this->writeMethods) ?
                       HTTP_Request2::METHOD_POST : HTTP_Request2::METHOD_GET;
@@ -317,7 +322,8 @@ class Services_Digg2
         $args['type'] = 'json';
         $this->getHTTPRequest2()->setHeader('Accept: application/json');
 
-        $uri = $this->getURI() . '/' . $this->getVersion() . '/endpoint';
+        $uri = $this->getURI() . '/' . $this->getVersion() . '/'
+            . $this->currentGroup . '.' . $method;
 
         if ($this->getHTTPOAuthConsumer() instanceof HTTP_OAuth_Consumer) {
             try {
@@ -397,8 +403,8 @@ class Services_Digg2
         $status = $response->getStatus();
 
         if (strncmp($status, '2', 1) !== 0) {
-            throw new Services_Digg2_Exception($body->error->message,
-                                               $body->error->code,
+            throw new Services_Digg2_Exception($body->message,
+                                               $body->code,
                                                $status);
         }
         return $body;
