@@ -22,10 +22,10 @@
   <email>rich.schu@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-08-05</date>
- <time>13:02:51</time>
+ <date>2010-08-25</date>
+ <time>09:56:03</time>
  <version>
-  <release>0.3.0</release>
+  <release>0.3.1</release>
   <api>0.3.0</api>
  </version>
  <stability>
@@ -34,8 +34,7 @@
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
  <notes>
-* Added support for version 2.0 of the Digg API
-* Added examples for version 2.0
+* Changed host url
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -43,7 +42,7 @@
    <file baseinstalldir="/" md5sum="9c5165d08c6c1f89d8389fc15b8c296d" name="examples/v2_0_comment_bury.php" role="doc" />
    <file baseinstalldir="/" md5sum="2d38cbe45ee00b8ac96aeffb931090d3" name="examples/v2_0_comment_digg.php" role="doc" />
    <file baseinstalldir="/" md5sum="54ca39a8c7e33376d414c126bfe6f586" name="examples/v2_0_comment_getInfo.php" role="doc" />
-   <file baseinstalldir="/" md5sum="c9cfdc345a0dd977122885c55e1003b5" name="examples/v2_0_comment_getRecent.php" role="doc" />
+   <file baseinstalldir="/" md5sum="92cfab33215681e2589aa39836720067" name="examples/v2_0_comment_getRecent.php" role="doc" />
    <file baseinstalldir="/" md5sum="5061bd628d5cd6e1ddfd91517ae5ff3c" name="examples/v2_0_comment_getReplies.php" role="doc" />
    <file baseinstalldir="/" md5sum="49688f24f9efd34519765bca4cef008d" name="examples/v2_0_comment_post.php" role="doc" />
    <file baseinstalldir="/" md5sum="2d56a720cfe4afe9ac01951842a85922" name="examples/v2_0_digg_getAll.php" role="doc" />
@@ -60,7 +59,7 @@
    <file baseinstalldir="/" md5sum="ab4871558b7b669c45aab3618cc6669a" name="examples/v2_0_user_getMyNews.php" role="doc" />
    <file baseinstalldir="/" md5sum="e7ab298668ba345a6d914299ead2b2b5" name="examples/v2_0_user_getSavedStories.php" role="doc" />
    <file baseinstalldir="/" md5sum="f732ce2b9f44bc760b71f44a671dc607" name="examples/v2_0_user_removeStory.php" role="doc" />
-   <file baseinstalldir="/" md5sum="14337df498e110f689aedae33e24e791" name="Services/Digg2.php" role="php" />
+   <file baseinstalldir="/" md5sum="81066b0f7b340ecb8c47f060f1b216c9" name="Services/Digg2.php" role="php" />
    <file baseinstalldir="/" md5sum="d8a6885199209df43e9f5e4c1d92ff25" name="Services/Digg2/Exception.php" role="php" />
    <file baseinstalldir="/" md5sum="e842494c7e3899ad174043fc0013175b" name="tests/Services/Digg2Test.php" role="test" />
    <file baseinstalldir="/" md5sum="f97d0e10ecba94c0c4ee09cf8ed327da" name="tests/Services/Digg2/AllTests.php" role="test" />
@@ -194,6 +193,21 @@ Initial PEAR release
    <notes>
 * Added support for version 2.0 of the Digg API
 * Added examples for version 2.0
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.3.1</release>
+    <api>0.3.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-08-25</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+* Changed host url
    </notes>
   </release>
  </changelog>

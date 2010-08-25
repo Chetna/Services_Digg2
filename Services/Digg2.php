@@ -77,7 +77,7 @@ class Services_Digg2
      * @see setURI()
      * @var string
      */
-    protected $uri = 'http://services.new.digg.com';
+    protected $uri = 'http://services.digg.com';
 
     /**
      * Version to use in API calls
