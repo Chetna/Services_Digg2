@@ -22,10 +22,10 @@
   <email>rich.schu@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-08-25</date>
- <time>09:56:03</time>
+ <date>2010-10-04</date>
+ <time>10:50:07</time>
  <version>
-  <release>0.3.1</release>
+  <release>0.3.2</release>
   <api>0.3.0</api>
  </version>
  <stability>
@@ -59,7 +59,7 @@
    <file baseinstalldir="/" md5sum="ab4871558b7b669c45aab3618cc6669a" name="examples/v2_0_user_getMyNews.php" role="doc" />
    <file baseinstalldir="/" md5sum="e7ab298668ba345a6d914299ead2b2b5" name="examples/v2_0_user_getSavedStories.php" role="doc" />
    <file baseinstalldir="/" md5sum="f732ce2b9f44bc760b71f44a671dc607" name="examples/v2_0_user_removeStory.php" role="doc" />
-   <file baseinstalldir="/" md5sum="81066b0f7b340ecb8c47f060f1b216c9" name="Services/Digg2.php" role="php" />
+   <file baseinstalldir="/" md5sum="1a4369aec84f184fccc4afe00cfffafa" name="Services/Digg2.php" role="php" />
    <file baseinstalldir="/" md5sum="d8a6885199209df43e9f5e4c1d92ff25" name="Services/Digg2/Exception.php" role="php" />
    <file baseinstalldir="/" md5sum="e842494c7e3899ad174043fc0013175b" name="tests/Services/Digg2Test.php" role="test" />
    <file baseinstalldir="/" md5sum="f97d0e10ecba94c0c4ee09cf8ed327da" name="tests/Services/Digg2/AllTests.php" role="test" />
@@ -205,6 +205,21 @@ Initial PEAR release
     <api>alpha</api>
    </stability>
    <date>2010-08-25</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+   <notes>
+* Changed host url
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.3.2</release>
+    <api>0.3.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-10-04</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
    <notes>
 * Changed host url

@@ -313,7 +313,8 @@ class Services_Digg2
      */
     protected function sendRequest($method, array $args)
     {
-        $httpMethod = in_array($args['method'], $this->writeMethods) ?
+        $method = $this->currentGroup . '.' . $method;
+        $httpMethod = in_array($method, $this->writeMethods) ?
                       HTTP_Request2::METHOD_POST : HTTP_Request2::METHOD_GET;
 
         $this->getHTTPRequest2()->setMethod($httpMethod);
@@ -323,7 +324,7 @@ class Services_Digg2
         $this->getHTTPRequest2()->setHeader('Accept: application/json');
 
         $uri = $this->getURI() . '/' . $this->getVersion() . '/'
-            . $this->currentGroup . '.' . $method;
+            . $method;
 
         if ($this->getHTTPOAuthConsumer() instanceof HTTP_OAuth_Consumer) {
             try {
