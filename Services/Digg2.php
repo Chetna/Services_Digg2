@@ -402,9 +402,10 @@ class Services_Digg2
             );
         }
         $status = $response->getStatus();
+        $message = $status . ' - ' . $response->getReasonPhrase();
 
         if (strncmp($status, '2', 1) !== 0) {
-            throw new Services_Digg2_Exception($body->message,
+            throw new Services_Digg2_Exception($message,
                                                $body->code,
                                                $status);
         }
